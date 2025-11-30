@@ -1,0 +1,161 @@
+/* ========================================
+   PREMIUM INPUT SYSTEM - Elegant Forms
+   ======================================== */
+
+.input-wrapper {
+  margin-bottom: var(--spacing-lg);
+}
+
+.input-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
+}
+
+.required {
+  color: var(--error);
+  margin-left: 4px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.input-container.focused {
+  background: var(--bg-elevated);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 4px var(--accent-primary-soft);
+}
+
+.input-container.error {
+  border-color: var(--error);
+  box-shadow: 0 0 0 4px var(--error-soft);
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  color: var(--text-tertiary);
+  font-size: 1.1rem;
+  transition: color var(--transition-normal);
+}
+
+.input-container.focused .input-icon {
+  color: var(--accent-primary);
+}
+
+.input-field {
+  flex: 1;
+  padding: 16px; /* default padding so text isn't flush left when no icon */
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  outline: none;
+  min-height: 52px;
+}
+
+/* when an icon exists we remove left padding so the icon's spacing is used */
+.input-container.has-icon .input-field {
+  padding-left: 0;
+}
+
+.input-field::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* Textarea Variant */
+.input-field.textarea {
+  resize: vertical;
+  min-height: 120px;
+  padding: 16px;
+  line-height: 1.6;
+}
+
+/* Select Variant */
+.input-field.select {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+/* Error Message */
+.input-error {
+  color: var(--error);
+  font-size: 0.8rem;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Helper Text */
+.input-helper {
+  color: var(--text-tertiary);
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .input-field {
+    padding: 14px;
+    font-size: 0.95rem;
+    min-height: 48px;
+  }
+  
+  .input-container.has-icon .input-field {
+    padding-left: 0;
+  }
+  
+  .input-icon {
+    padding: 0 12px;
+    font-size: 1rem;
+  }
+  
+  .input-wrapper {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .input-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-field {
+    padding: 12px;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+  
+  .input-icon {
+    padding: 0 10px;
+    font-size: 0.95rem;
+  }
+  
+  .input-label {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+  
+  .input-error,
+  .input-helper {
+    font-size: 0.75rem;
+  }
+}
+

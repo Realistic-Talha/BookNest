@@ -1,0 +1,26 @@
+ .app {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+ }
+ 
+ .main-content {
+   flex: 1;
+   padding-top: 80px; /* Account for fixed header */
+ }
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px; /* Smaller header on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding-top: 64px; /* Even smaller header on small screens */
+  }
+}
