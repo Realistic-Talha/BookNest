@@ -1,4 +1,4 @@
- import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
  import { ThemeProvider } from './context/ThemeContext';
  import { BookProvider } from './context/BookContext';
  import { ReservationProvider } from './context/ReservationContext';
