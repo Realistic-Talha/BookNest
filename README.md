@@ -71,38 +71,8 @@
 
 ## 📸 Screenshots
 
-### Home Page - Dark Mode
 <p align="center">
-  <img src="./screenshots/home-dark.png" alt="Home Page Dark Mode" width="100%" />
-</p>
-
-### Home Page - Light Mode
-<p align="center">
-  <img src="./screenshots/home-light.png" alt="Home Page Light Mode" width="100%" />
-</p>
-
-### Book Details
-<p align="center">
-  <img src="./screenshots/book-details.png" alt="Book Details Page" width="100%" />
-</p>
-
-### Shopping Cart
-<p align="center">
-  <img src="./screenshots/cart.png" alt="Shopping Cart" width="100%" />
-</p>
-
-### User Dashboard
-<p align="center">
-  <img src="./screenshots/dashboard.png" alt="User Dashboard" width="100%" />
-</p>
-
-### Mobile Responsive View
-<p align="center">
-  <img src="./screenshots/mobile-home.png" alt="Mobile Home" width="30%" />
-  &nbsp;&nbsp;
-  <img src="./screenshots/mobile-menu.png" alt="Mobile Menu" width="30%" />
-  &nbsp;&nbsp;
-  <img src="./screenshots/mobile-details.png" alt="Mobile Details" width="30%" />
+  <img src="./screenshots/preview.png" alt="BookNest Preview" width="100%" />
 </p>
 
 ---
